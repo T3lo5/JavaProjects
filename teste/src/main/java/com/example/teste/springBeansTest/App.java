@@ -1,6 +1,7 @@
 package com.example.teste.springBeansTest;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.AplicationContext;
+
 
 public class App {
 
@@ -9,8 +10,13 @@ public class App {
         ApplicationContext factory = new AnnotationConfigApplicationContext(AppConfig.class);
 
         Livro livro = factory.getBean(Livro.class);
-        Livro.setName("Spring Framework");
-        Livro.setCode("123456");
+        livro.setName("Spring Framework");
+        livro.setCode("123456");
         livro.exibir();
+
+        Autor autor = factory.getBean(Autor.class);
+        autor.setName("Rodrigo");
+        autor.exibirAutor();
+
     }
 }

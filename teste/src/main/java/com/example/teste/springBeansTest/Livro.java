@@ -5,6 +5,16 @@ public class Livro {
     private String name;
     private String code;
 
+    AutorLivro autorLivro;
+
+    public AutorLivro getAutorLivro() {
+        return autorLivro;
+    }
+
+    public void setAutorLivro(AutorLivro autorLivro) {
+        this.autorLivro = autorLivro;
+    }
+
     public String getName() {
         return name;
     }

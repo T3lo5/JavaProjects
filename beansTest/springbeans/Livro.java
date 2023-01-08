@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class Livro {
+public class Livro {
+
+    private String name;
+    private String code;
 }

@@ -1,2 +1,12 @@
-package com.anderson.gameawards.service.exception;public class BusinessException {
+package com.anderson.gameawards.service.exception;
+
+public class BusinessException extends RuntimeException {
+
+    private static final long serialVersionUID = 1L;
+
+    public BusinessException(String message) {
+        super(message);
+    }
+
 }
+
