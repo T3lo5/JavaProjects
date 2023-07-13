@@ -55,7 +55,10 @@ mvn spring-boot:run
 
 Certifique-se de fornecer informações adicionais, como detalhes sobre a autenticação, se aplicável, e qualquer outra configuração específica do projeto que seja relevante para a execução adequada do backend.
 
+## Lembre-se que em configurações tem Criação automática de tabelas em:
+spring.jpa.hibernate.ddl-auto=create
 
+- Ao criar a primeira vez lembre-se de comentar ou retirar esta parte do código ao reiniciar o servidor pois se não realizar isto todo seu database será recriado
 
 
 
